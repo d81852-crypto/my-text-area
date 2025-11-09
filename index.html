@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>אזור התוכן</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-controls">
+            <h3>בחר חלק לטעינה:</h3>
+            <div id="part-selector">
+                <button class="part-button" data-file="part1.html">תשס"א</button>
+                <button class="part-button" data-file="part2.html">תשס"ב</button>
+                <button class="part-button" data-file="part3.html">תשס"ג</button>
+                <button class="part-button" data-file="part4.html">תשס"ד</button>
+                <button class="part-button" data-file="part5.html">תשס"ה</button>
+                <button class="part-button" data-file="part6.html">תשס"ו</button>
+                <button class="part-button" data-file="part7.html">תשס"ז</button>
+                <button class="part-button" data-file="part8.html">תשס"ח</button>
+                <button class="part-button" data-file="part9.html">תשס"ט</button>
+                <button class="part-button" data-file="part10.html">תש"ע</button>
+                <button class="part-button" data-file="part11.html">תשע"א</button>
+                <button class="part-button" data-file="part12.html">תשע"ב</button>
+                <button class="part-button" data-file="part13.html">תשע"ג</button>
+                <button class="part-button" data-file="part14.html">תשע"ד</button>
+                <button class="part-button" data-file="part15.html">תשע"ה</button>
+                <button class="part-button" data-file="part16.html">תשע"ו</button>
+                <button class="part-button" data-file="part17.html">תשע"ז</button>
+                <button class="part-button" data-file="part18.html">תשע"ח</button>
+                <button class="part-button" data-file="part19.html">תשע"ט</button>
+                <button class="part-button" data-file="part20.html">תש"פ</button>
+                <button class="part-button" data-file="part21.html">תשפ"א</button>
+            </div>
+            
+            <div id="header-search-summary" style="display: none;"></div>
+            
+            <h3 id="global-search-title">חיפוש גלובלי:</h3>
+            <div class="search-container">
+                <input type="search" id="search-box" placeholder="הקלד לחיפוש גלובלי...">
+                <button id="clear-search-btn" title="נקה חיפוש">✖</button>
+            </div>
+            <div id="highlight-nav">
+                <button id="prev-highlight" title="המופע הקודם">▲ הקודם</button>
+                <span id="highlight-counter"></span>
+                <button id="next-highlight" title="המופע הבא">הבא ▼</button>
+            </div>
+        </div>
+        
+        <div class="utility-controls">
+            <button id="font-decrease" title="הקטן גופן">-</button>
+            <button id="font-increase" title="הגדל גופן">+</button>
+            <button id="dark-mode-btn" title="שנה ערכת נושא">🌙</button>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <nav id="navigation-menu">
+            <h3 id="sidebar-title"></h3>
+            <div class="toc-controls">
+                <button id="toc-expand-all" class="toc-button">פתח הכל</button>
+                <button id="toc-collapse-all" class="toc-button">סגור הכל</button>
+            </div>
+
+            <h4 id="sidebar-subtitle">ניווט מהיר (בחלק הנוכחי)</h4>
+            <ul id="toc-list"><li>נא לבחור חלק לטעינה</li></ul>
+        </nav>
+
+        <main id="content-area">
+            <h2>נא לבחור חלק לטעינה מהתפריט למעלה.</h2>
+        </main>
+    </div>
+
+    <button id="back-to-top-btn" title="חזרה למעלה">↑</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
